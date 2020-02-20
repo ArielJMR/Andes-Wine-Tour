@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_wKMTUFOFEeq-3pA_APo8uw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_wKM6YFOFEeq-3pA_APo8uw" source="codegen">
         <details xmi:id="_wKM6YVOFEeq-3pA_APo8uw" key="codegenDirectory" value="/Andes-Wine-Tour/src/main/java"/>
-        <details xmi:id="_y4ZmAFOFEeq-3pA_APo8uw" key="AssociatedSourceCode" value="/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/AgenciaViajes.java;588596139/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/CasaCambio.java;155066475/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Departamento.java;1595402338/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Foto.java;3983609238/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/PuntoTuristico.java;379741751/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Hotel.java;400088225/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/RentarCar.java;2756106422/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Restaurante.java;760358169/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Usuario.java;4119082636/1;"/>
+        <details xmi:id="_y4ZmAFOFEeq-3pA_APo8uw" key="AssociatedSourceCode" value="/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/AgenciaViajes.java;1892404135/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/CasaCambio.java;741044295/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Departamento.java;1595402338/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Foto.java;3983609238/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/PuntoTuristico.java;3491857626/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Hotel.java;2015134794/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/RentarCar.java;2046883496/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Restaurante.java;380175883/1;/Andes-Wine-Tour/src/main/java/AndesWineTour/entidades/Usuario.java;3094809140/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_tTcdIFPcEeq3VMlT_NP9Ag" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_tTcdIVPcEeq3VMlT_NP9Ag" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_tTcdIlPcEeq3VMlT_NP9Ag" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_tTcdI1PcEeq3VMlT_NP9Ag" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+          <details xmi:id="_tTcdJFPcEeq3VMlT_NP9Ag" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_xNY1sFOFEeq-3pA_APo8uw">
@@ -58,7 +65,10 @@
           <ownedAttribute xmi:id="_x0R2kFOFEeq-3pA_APo8uw" name="servicio">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_x0i8UFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" association="_yDxEEFOFEeq-3pA_APo8uw"/>
+          <ownedAttribute xmi:id="_x0i8UFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" isOrdered="true" association="_yDxEEFOFEeq-3pA_APo8uw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uHQfsFPcEeq3VMlT_NP9Ag" value="*"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_uHRGwFPcEeq3VMlT_NP9Ag" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_x1IyMFOFEeq-3pA_APo8uw" name="departamento" type="_xOCV8FOFEeq-3pA_APo8uw" association="_yDMcUFOFEeq-3pA_APo8uw">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x1KAUFOFEeq-3pA_APo8uw"/>
           </ownedAttribute>
@@ -82,7 +92,10 @@
           <ownedAttribute xmi:id="_x2dn4FOFEeq-3pA_APo8uw" name="link">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_x2uGkFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" association="_yD6OAFOFEeq-3pA_APo8uw"/>
+          <ownedAttribute xmi:id="_x2uGkFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" isOrdered="true" association="_yD6OAFOFEeq-3pA_APo8uw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uHbe0FPcEeq3VMlT_NP9Ag" value="*"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_uHbe0VPcEeq3VMlT_NP9Ag" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_x2yYAFOFEeq-3pA_APo8uw" name="departamento" type="_xOCV8FOFEeq-3pA_APo8uw" association="_yDRU0VOFEeq-3pA_APo8uw">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x2zmIFOFEeq-3pA_APo8uw"/>
           </ownedAttribute>
@@ -110,7 +123,10 @@
           <ownedAttribute xmi:id="_x4KRAFOFEeq-3pA_APo8uw" name="direccion">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_x4fBIFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" association="_yEDX8FOFEeq-3pA_APo8uw"/>
+          <ownedAttribute xmi:id="_x4fBIFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" isOrdered="true" association="_yEDX8FOFEeq-3pA_APo8uw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uHtLoFPcEeq3VMlT_NP9Ag" value="*"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_uHtysVPcEeq3VMlT_NP9Ag" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_x4kgsFOFEeq-3pA_APo8uw" name="departamento" type="_xOCV8FOFEeq-3pA_APo8uw" association="_yDUYIFOFEeq-3pA_APo8uw">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x4lu0FOFEeq-3pA_APo8uw"/>
           </ownedAttribute>
@@ -134,7 +150,10 @@
           <ownedAttribute xmi:id="_x5u-UFOFEeq-3pA_APo8uw" name="link">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_x57yoFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" association="_yEOXEVOFEeq-3pA_APo8uw"/>
+          <ownedAttribute xmi:id="_x57yoFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" isOrdered="true" association="_yEOXEVOFEeq-3pA_APo8uw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uHmd8FPcEeq3VMlT_NP9Ag" value="*"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_uHmd8VPcEeq3VMlT_NP9Ag" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_x6ArIFOFEeq-3pA_APo8uw" name="departamento" type="_xOCV8FOFEeq-3pA_APo8uw" association="_yDXbcFOFEeq-3pA_APo8uw">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x6B5QFOFEeq-3pA_APo8uw"/>
           </ownedAttribute>
@@ -158,7 +177,10 @@
           <ownedAttribute xmi:id="_x8n6QFOFEeq-3pA_APo8uw" name="link">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_x85nEFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" association="_yEYvIVOFEeq-3pA_APo8uw"/>
+          <ownedAttribute xmi:id="_x85nEFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" isOrdered="true" association="_yEYvIVOFEeq-3pA_APo8uw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uH2VkFPcEeq3VMlT_NP9Ag" value="*"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_uH28oFPcEeq3VMlT_NP9Ag" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_x9Bi4FOFEeq-3pA_APo8uw" name="departamento" type="_xOCV8FOFEeq-3pA_APo8uw" association="_yDZQoVOFEeq-3pA_APo8uw">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x9CxAFOFEeq-3pA_APo8uw"/>
           </ownedAttribute>
@@ -182,7 +204,10 @@
           <ownedAttribute xmi:id="_x-s94FOFEeq-3pA_APo8uw" name="link">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_x-7AUFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" association="_yEhSAFOFEeq-3pA_APo8uw"/>
+          <ownedAttribute xmi:id="_x-7AUFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw" isOrdered="true" association="_yEhSAFOFEeq-3pA_APo8uw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uH-4cFPcEeq3VMlT_NP9Ag" value="*"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_uH_fgFPcEeq3VMlT_NP9Ag" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_x--qsVOFEeq-3pA_APo8uw" name="departamento" visibility="private" type="_xOCV8FOFEeq-3pA_APo8uw" association="_yEomwVOFEeq-3pA_APo8uw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_xO9jAFOFEeq-3pA_APo8uw" name="Usuario">
@@ -258,11 +283,14 @@
         <packagedElement xmi:type="uml:Interface" xmi:id="_xwPrIVOFEeq-3pA_APo8uw" name="OneToOne"/>
         <packagedElement xmi:type="uml:Interface" xmi:id="_xxjSsVOFEeq-3pA_APo8uw" name="Temporal"/>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_xxx8MFOFEeq-3pA_APo8uw" name="TemporalType"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_uKxtwFPcEeq3VMlT_NP9Ag" name="JoinColumn"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_xMZ-QFOFEeq-3pA_APo8uw" name="java">
       <packagedElement xmi:type="uml:Package" xmi:id="_xMalUFOFEeq-3pA_APo8uw" name="util">
         <packagedElement xmi:type="uml:DataType" xmi:id="_xxV3UFOFEeq-3pA_APo8uw" name="Date"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_uKhPEFPcEeq3VMlT_NP9Ag" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_uKpx8VPcEeq3VMlT_NP9Ag" name="List"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_wKP9sFOFEeq-3pA_APo8uw">
@@ -309,14 +337,6 @@
   <Persistency:Column xmi:id="_xz9GcFOFEeq-3pA_APo8uw" base_Property="_xz0jkFOFEeq-3pA_APo8uw" label="Correo_Agencia_Viaje"/>
   <Persistency:Column xmi:id="_x0PaUFOFEeq-3pA_APo8uw" base_Property="_xz-7oFOFEeq-3pA_APo8uw" label="Link_Agencia_Viaje"/>
   <Persistency:Column xmi:id="_x0ggEFOFEeq-3pA_APo8uw" base_Property="_x0R2kFOFEeq-3pA_APo8uw" label="Servicios_Agencia_Viaje"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_x0jjYFOFEeq-3pA_APo8uw" base_Element="_x0i8UFOFEeq-3pA_APo8uw">
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x0kxgFOFEeq-3pA_APo8uw" name="getFoto" method="_yDGVsFOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x06IsFOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    </associatedElement>
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x0lYkFOFEeq-3pA_APo8uw" name="setFoto" method="_yDJZAFOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x0l_oFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    </associatedElement>
-  </UMLLabProfile:LegacyStyledElement>
   <UMLLabProfile:Annotations xmi:id="_x0794FOFEeq-3pA_APo8uw" base_Element="_x0i8UFOFEeq-3pA_APo8uw">
     <annotations xmi:id="_x1ILIFOFEeq-3pA_APo8uw" name="OneToMany"/>
   </UMLLabProfile:Annotations>
@@ -328,14 +348,6 @@
   <Persistency:Column xmi:id="_x2L7EFOFEeq-3pA_APo8uw" base_Property="_x19RkFOFEeq-3pA_APo8uw" label="Telefono_Casa_Cambio"/>
   <Persistency:Column xmi:id="_x2bLoFOFEeq-3pA_APo8uw" base_Property="_x2O-YFOFEeq-3pA_APo8uw" label="Correo_Casa_Cambio"/>
   <Persistency:Column xmi:id="_x2rqUFOFEeq-3pA_APo8uw" base_Property="_x2dn4FOFEeq-3pA_APo8uw" label="Link_Casa_Cambio"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_x2utoFOFEeq-3pA_APo8uw" base_Element="_x2uGkFOFEeq-3pA_APo8uw">
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x2vUsFOFEeq-3pA_APo8uw" name="getFoto" method="_yDORgFOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x2wi0FOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    </associatedElement>
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x2vUsVOFEeq-3pA_APo8uw" name="setFoto" method="_yDQGsFOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x2v7wFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    </associatedElement>
-  </UMLLabProfile:LegacyStyledElement>
   <UMLLabProfile:Annotations xmi:id="_x2xw8FOFEeq-3pA_APo8uw" base_Element="_x2uGkFOFEeq-3pA_APo8uw">
     <annotations xmi:id="_x2xw8VOFEeq-3pA_APo8uw" name="OneToMany"/>
   </UMLLabProfile:Annotations>
@@ -351,14 +363,6 @@
   <Persistency:Column xmi:id="_x39csFOFEeq-3pA_APo8uw" base_Property="_x3woYFOFEeq-3pA_APo8uw" label="Cod_Punto_Turistico"/>
   <Persistency:Column xmi:id="_x4Ib0FOFEeq-3pA_APo8uw" base_Property="_x3_R4FOFEeq-3pA_APo8uw" label="Nombre_Punto_Turistico"/>
   <Persistency:Column xmi:id="_x4ck4FOFEeq-3pA_APo8uw" base_Property="_x4KRAFOFEeq-3pA_APo8uw" label="Direccion_Punto_Turistico"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_x4foMFOFEeq-3pA_APo8uw" base_Element="_x4fBIFOFEeq-3pA_APo8uw">
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x4g2UFOFEeq-3pA_APo8uw" name="getFoto" method="_yDSi8FOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x4irgFOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    </associatedElement>
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x4hdYFOFEeq-3pA_APo8uw" name="setFoto" method="_yDTKAVOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x4hdYVOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    </associatedElement>
-  </UMLLabProfile:LegacyStyledElement>
   <UMLLabProfile:Annotations xmi:id="_x4jSkFOFEeq-3pA_APo8uw" base_Element="_x4fBIFOFEeq-3pA_APo8uw">
     <annotations xmi:id="_x4jSkVOFEeq-3pA_APo8uw" name="OneToMany"/>
   </UMLLabProfile:Annotations>
@@ -370,14 +374,6 @@
   <Persistency:Column xmi:id="_x5g74FOFEeq-3pA_APo8uw" base_Property="_x5K9oFOFEeq-3pA_APo8uw" label="Telefono_Hotel"/>
   <Persistency:Column xmi:id="_x5tJIFOFEeq-3pA_APo8uw" base_Property="_x5ixEFOFEeq-3pA_APo8uw" label="Correo_Hotel"/>
   <Persistency:Column xmi:id="_x55WYFOFEeq-3pA_APo8uw" base_Property="_x5u-UFOFEeq-3pA_APo8uw" label="Link_Hotel"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_x58ZsFOFEeq-3pA_APo8uw" base_Element="_x57yoFOFEeq-3pA_APo8uw">
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x59n0FOFEeq-3pA_APo8uw" name="getFoto" method="_yDU_MFOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x5_dAFOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    </associatedElement>
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x5-O4FOFEeq-3pA_APo8uw" name="setFoto" method="_yDWNUFOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x5-O4VOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    </associatedElement>
-  </UMLLabProfile:LegacyStyledElement>
   <UMLLabProfile:Annotations xmi:id="_x6AEEFOFEeq-3pA_APo8uw" base_Element="_x57yoFOFEeq-3pA_APo8uw">
     <annotations xmi:id="_x6AEEVOFEeq-3pA_APo8uw" name="OneToMany"/>
   </UMLLabProfile:Annotations>
@@ -389,14 +385,6 @@
   <Persistency:Column xmi:id="_x8YpsFOFEeq-3pA_APo8uw" base_Property="_x8KnQFOFEeq-3pA_APo8uw" label="Telefono_Rentar_Car"/>
   <Persistency:Column xmi:id="_x8mFEFOFEeq-3pA_APo8uw" base_Property="_x8Z30FOFEeq-3pA_APo8uw" label="Correo_Rentar_Car"/>
   <Persistency:Column xmi:id="_x83K0FOFEeq-3pA_APo8uw" base_Property="_x8n6QFOFEeq-3pA_APo8uw" label="Link_Rentar_Car"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_x861MFOFEeq-3pA_APo8uw" base_Element="_x85nEFOFEeq-3pA_APo8uw">
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x88DUFOFEeq-3pA_APo8uw" name="getFoto" method="_yDYpkFOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x8_GoFOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    </associatedElement>
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x88qYFOFEeq-3pA_APo8uw" name="setFoto" method="_yDYpklOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x88qYVOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    </associatedElement>
-  </UMLLabProfile:LegacyStyledElement>
   <UMLLabProfile:Annotations xmi:id="_x9A70FOFEeq-3pA_APo8uw" base_Element="_x85nEFOFEeq-3pA_APo8uw">
     <annotations xmi:id="_x9A70VOFEeq-3pA_APo8uw" name="OneToMany"/>
   </UMLLabProfile:Annotations>
@@ -408,20 +396,17 @@
   <Persistency:Column xmi:id="_x-aC8FOFEeq-3pA_APo8uw" base_Property="_x-N1sFOFEeq-3pA_APo8uw" label="Telefono_Restaurante"/>
   <Persistency:Column xmi:id="_x-rIsFOFEeq-3pA_APo8uw" base_Property="_x-b4IFOFEeq-3pA_APo8uw" label="Correo_Restaurante"/>
   <Persistency:Column xmi:id="_x-4kEFOFEeq-3pA_APo8uw" base_Property="_x-s94FOFEeq-3pA_APo8uw" label="Link_Restaurante"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_x-7nYFOFEeq-3pA_APo8uw" base_Element="_x-7AUFOFEeq-3pA_APo8uw">
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x-8OcFOFEeq-3pA_APo8uw" name="getFoto" method="_yDZ3sFOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x-9ckFOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    </associatedElement>
-    <associatedElement xmi:type="uml:Operation" xmi:id="_x-8OcVOFEeq-3pA_APo8uw" name="setFoto" method="_yDaewVOFEeq-3pA_APo8uw">
-      <ownedParameter xmi:id="_x-81gFOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    </associatedElement>
-  </UMLLabProfile:LegacyStyledElement>
   <UMLLabProfile:Annotations xmi:id="_x--DoFOFEeq-3pA_APo8uw" base_Element="_x-7AUFOFEeq-3pA_APo8uw">
     <annotations xmi:id="_x--qsFOFEeq-3pA_APo8uw" name="OneToMany"/>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_x-_RwFOFEeq-3pA_APo8uw" base_Element="_x--qsVOFEeq-3pA_APo8uw"/>
   <UMLLabProfile:Annotations xmi:id="_x-_40FOFEeq-3pA_APo8uw" base_Element="_x--qsVOFEeq-3pA_APo8uw">
     <annotations xmi:id="_x-_40VOFEeq-3pA_APo8uw" name="OneToOne"/>
+    <annotations xmi:id="_uIAGkFPcEeq3VMlT_NP9Ag" name="JoinColumn">
+      <annotationParameters xmi:id="_uIAtoFPcEeq3VMlT_NP9Ag" name="name" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_uK_wMFPcEeq3VMlT_NP9Ag" value="&quot;Cod_Departamento&quot;"/>
+      </annotationParameters>
+    </annotations>
   </UMLLabProfile:Annotations>
   <Persistency:PrimaryKey xmi:id="_x_CVEFOFEeq-3pA_APo8uw" base_Property="_x_BG8FOFEeq-3pA_APo8uw"/>
   <Persistency:GeneratedValueMapping xmi:id="_x_C8IFOFEeq-3pA_APo8uw" base_Property="_x_BG8FOFEeq-3pA_APo8uw"/>
@@ -433,88 +418,33 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_yAYY4FOFEeq-3pA_APo8uw" base_Element="_yAXx0FOFEeq-3pA_APo8uw"/>
   <UMLLabProfile:Annotations xmi:id="_yAY_8FOFEeq-3pA_APo8uw" base_Element="_yAXx0FOFEeq-3pA_APo8uw">
     <annotations xmi:id="_yAZnAFOFEeq-3pA_APo8uw" name="OneToOne"/>
+    <annotations xmi:id="_uIG0QFPcEeq3VMlT_NP9Ag" name="JoinColumn">
+      <annotationParameters xmi:id="_uIG0QVPcEeq3VMlT_NP9Ag" name="name" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_uLAXQFPcEeq3VMlT_NP9Ag" value="&quot;Cod_Foto&quot;"/>
+      </annotationParameters>
+    </annotations>
   </UMLLabProfile:Annotations>
   <Persistency:Temporal xmi:id="_yAaOEVOFEeq-3pA_APo8uw" base_Property="_yAaOEFOFEeq-3pA_APo8uw"/>
   <Persistency:Temporal xmi:id="_yAcqUFOFEeq-3pA_APo8uw" base_Property="_yAcDQFOFEeq-3pA_APo8uw" temporalType="TIMESTAMP"/>
   <Persistency:Temporal xmi:id="_yAgUsFOFEeq-3pA_APo8uw" base_Property="_yAfGkFOFEeq-3pA_APo8uw" temporalType="TIMESTAMP"/>
-  <uml:OpaqueBehavior xmi:id="_yDGVsFOFEeq-3pA_APo8uw" name="getFoto" specification="_x0kxgFOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDIx8FOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    <language>java</language>
-    <body>return foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDJZAFOFEeq-3pA_APo8uw" name="setFoto" specification="_x0lYkFOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDJZAVOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    <language>java</language>
-    <body>this.foto = foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDORgFOFEeq-3pA_APo8uw" name="getFoto" specification="_x2vUsFOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDORgVOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    <language>java</language>
-    <body>return foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDQGsFOFEeq-3pA_APo8uw" name="setFoto" specification="_x2vUsVOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDQGsVOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    <language>java</language>
-    <body>this.foto = foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDSi8FOFEeq-3pA_APo8uw" name="getFoto" specification="_x4g2UFOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDTKAFOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    <language>java</language>
-    <body>return foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDTKAVOFEeq-3pA_APo8uw" name="setFoto" specification="_x4hdYFOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDTKAlOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    <language>java</language>
-    <body>this.foto = foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDU_MFOFEeq-3pA_APo8uw" name="getFoto" specification="_x59n0FOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDVmQFOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    <language>java</language>
-    <body>return foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDWNUFOFEeq-3pA_APo8uw" name="setFoto" specification="_x5-O4FOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDWNUVOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    <language>java</language>
-    <body>this.foto = foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDYpkFOFEeq-3pA_APo8uw" name="getFoto" specification="_x88DUFOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDYpkVOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    <language>java</language>
-    <body>return foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDYpklOFEeq-3pA_APo8uw" name="setFoto" specification="_x88qYFOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDYpk1OFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    <language>java</language>
-    <body>this.foto = foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDZ3sFOFEeq-3pA_APo8uw" name="getFoto" specification="_x-8OcFOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDaewFOFEeq-3pA_APo8uw" type="_xOJDoFOFEeq-3pA_APo8uw" direction="return"/>
-    <language>java</language>
-    <body>return foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_yDaewVOFEeq-3pA_APo8uw" name="setFoto" specification="_x-8OcVOFEeq-3pA_APo8uw">
-    <ownedParameter xmi:id="_yDaewlOFEeq-3pA_APo8uw" name="foto" type="_xOJDoFOFEeq-3pA_APo8uw"/>
-    <language>java</language>
-    <body>this.foto = foto;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <UMLLabProfile:Reference xmi:id="_yD5m8FOFEeq-3pA_APo8uw" base_Element="_yDxEEFOFEeq-3pA_APo8uw"/>
-  <UMLLabProfile:Reference xmi:id="_yECw4FOFEeq-3pA_APo8uw" base_Element="_yD6OAFOFEeq-3pA_APo8uw"/>
-  <UMLLabProfile:Reference xmi:id="_yEOXEFOFEeq-3pA_APo8uw" base_Element="_yEDX8FOFEeq-3pA_APo8uw"/>
-  <UMLLabProfile:Reference xmi:id="_yEYvIFOFEeq-3pA_APo8uw" base_Element="_yEOXEVOFEeq-3pA_APo8uw"/>
-  <UMLLabProfile:Reference xmi:id="_yEgq8FOFEeq-3pA_APo8uw" base_Element="_yEYvIVOFEeq-3pA_APo8uw"/>
-  <UMLLabProfile:Reference xmi:id="_yEomwFOFEeq-3pA_APo8uw" base_Element="_yEhSAFOFEeq-3pA_APo8uw"/>
   <UMLLabProfile:Reference xmi:id="_yExwsFOFEeq-3pA_APo8uw" base_Element="_yEomwVOFEeq-3pA_APo8uw"/>
   <UMLLabProfile:Reference xmi:id="_yE7hsFOFEeq-3pA_APo8uw" base_Element="_yEyXwFOFEeq-3pA_APo8uw"/>
+  <Persistency:JoinColumns xmi:id="_uHRt0FPcEeq3VMlT_NP9Ag" base_Property="_x1IyMFOFEeq-3pA_APo8uw">
+    <columns xmi:id="_uK9T8FPcEeq3VMlT_NP9Ag" label="Cod_Departamento" unique="true"/>
+  </Persistency:JoinColumns>
+  <Persistency:JoinColumns xmi:id="_uHnsEFPcEeq3VMlT_NP9Ag" base_Property="_x6ArIFOFEeq-3pA_APo8uw">
+    <columns xmi:id="_uK97AFPcEeq3VMlT_NP9Ag" label="Cod_Departamento" unique="true"/>
+  </Persistency:JoinColumns>
+  <Persistency:JoinColumns xmi:id="_uHtysFPcEeq3VMlT_NP9Ag" base_Property="_x4fBIFOFEeq-3pA_APo8uw">
+    <columns xmi:id="_uK97AVPcEeq3VMlT_NP9Ag" label="Cod_Foto" unique="true"/>
+  </Persistency:JoinColumns>
+  <Persistency:JoinColumns xmi:id="_uHvA0FPcEeq3VMlT_NP9Ag" base_Property="_x4kgsFOFEeq-3pA_APo8uw">
+    <columns xmi:id="_uK97AlPcEeq3VMlT_NP9Ag" label="Cod_Departamento" unique="true"/>
+  </Persistency:JoinColumns>
+  <Persistency:JoinColumns xmi:id="_uH3jsFPcEeq3VMlT_NP9Ag" base_Property="_x9Bi4FOFEeq-3pA_APo8uw">
+    <columns xmi:id="_uK-iEFPcEeq3VMlT_NP9Ag" label="Cod_Departamento" unique="true"/>
+  </Persistency:JoinColumns>
+  <UMLLabProfile:Reference xmi:id="_uKpx8FPcEeq3VMlT_NP9Ag" base_Element="_uKhPEFPcEeq3VMlT_NP9Ag"/>
+  <UMLLabProfile:Reference xmi:id="_uKxGsFPcEeq3VMlT_NP9Ag" base_Element="_uKpx8VPcEeq3VMlT_NP9Ag"/>
+  <UMLLabProfile:Reference xmi:id="_uK5CgFPcEeq3VMlT_NP9Ag" base_Element="_uKxtwFPcEeq3VMlT_NP9Ag"/>
 </xmi:XMI>

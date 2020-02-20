@@ -10,6 +10,9 @@
     <sourceRole xmi:id="_y63EIVOFEeq-3pA_APo8uw" aggregationKind="NONE" name="departamento" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x1IyMFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0E084FOFEeq-3pA_APo8uw" position="10.740742777661346,-31.706677835108906"/>
+      <stereotypes xmi:id="_HWRJAFPhEeq3VMlT_NP9Ag" name="JoinColumns">
+        <modelElement href="Andes-Wine-Tour.uml#_uHRt0FPcEeq3VMlT_NP9Ag"/>
+      </stereotypes>
       <visibility xmi:id="_y63EIlOFEeq-3pA_APo8uw" label="+"/>
       <cardinality xmi:id="_y63EI1OFEeq-3pA_APo8uw" label="0..1" max="1"/>
     </sourceRole>
@@ -22,9 +25,6 @@
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_y7XacFOFEeq-3pA_APo8uw" sourceAnchor="44.0,0.0" targetAnchor="64.0,56.0" target="_y_hhsFOFEeq-3pA_APo8uw" source="_y7XaeVOFEeq-3pA_APo8uw">
     <modelElement href="Andes-Wine-Tour.uml#_yDxEEFOFEeq-3pA_APo8uw"/>
-    <stereotypes xmi:id="_y7XacVOFEeq-3pA_APo8uw" name="Reference">
-      <modelElement href="Andes-Wine-Tour.uml#_yD5m8FOFEeq-3pA_APo8uw"/>
-    </stereotypes>
     <nameVisual xmi:id="_y7XaclOFEeq-3pA_APo8uw" text="">
       <visualProperties xmi:id="_0EipAFOFEeq-3pA_APo8uw" position="-23.430279548267507,69.36378676463586"/>
     </nameVisual>
@@ -37,8 +37,11 @@
     <targetRole xmi:id="_y7XadlOFEeq-3pA_APo8uw" aggregationKind="NONE" name="foto" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x0i8UFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0EjQEFOFEeq-3pA_APo8uw" position="-28.05384343453676,169.7920440382481"/>
+      <stereotypes xmi:id="_HWSXIFPhEeq3VMlT_NP9Ag" name="Annotations">
+        <modelElement href="Andes-Wine-Tour.uml#_x0794FOFEeq-3pA_APo8uw"/>
+      </stereotypes>
       <visibility xmi:id="_y7Xad1OFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_y7XaeFOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_y7XaeFOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_y_JuQFOFEeq-3pA_APo8uw" sourceAnchor="0.0,37.0" targetAnchor="84.0,151.0" target="_y_SRIFOFEeq-3pA_APo8uw" source="_zCYocFOFEeq-3pA_APo8uw">
@@ -50,6 +53,9 @@
     <sourceRole xmi:id="_y_NYoFOFEeq-3pA_APo8uw" aggregationKind="NONE" name="departamento" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x9Bi4FOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0E8RoFOFEeq-3pA_APo8uw" position="-87.70889837024595,-31.391485505499134"/>
+      <stereotypes xmi:id="_HWTlQFPhEeq3VMlT_NP9Ag" name="JoinColumns">
+        <modelElement href="Andes-Wine-Tour.uml#_uH3jsFPcEeq3VMlT_NP9Ag"/>
+      </stereotypes>
       <visibility xmi:id="_y_OmwVOFEeq-3pA_APo8uw" label="+"/>
       <cardinality xmi:id="_y_OmwFOFEeq-3pA_APo8uw" label="0..1" max="1"/>
     </sourceRole>
@@ -63,9 +69,6 @@
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_y_JuQVOFEeq-3pA_APo8uw" sourceAnchor="84.0,0.0" targetAnchor="0.0,28.0" target="_y_hhsFOFEeq-3pA_APo8uw" source="_y_SRIFOFEeq-3pA_APo8uw">
     <modelElement href="Andes-Wine-Tour.uml#_yEYvIVOFEeq-3pA_APo8uw"/>
     <bendpoints xmi:id="_0EatMFOFEeq-3pA_APo8uw" sourceY="-310" targetX="-380"/>
-    <stereotypes xmi:id="_y_N_sVOFEeq-3pA_APo8uw" name="Reference">
-      <modelElement href="Andes-Wine-Tour.uml#_yEgq8FOFEeq-3pA_APo8uw"/>
-    </stereotypes>
     <nameVisual xmi:id="_y_NYolOFEeq-3pA_APo8uw" text="">
       <visualProperties xmi:id="_0ElFQFOFEeq-3pA_APo8uw" position="-30.97288583902889,264.34472535587"/>
     </nameVisual>
@@ -78,16 +81,16 @@
     <targetRole xmi:id="_y_N_sFOFEeq-3pA_APo8uw" aggregationKind="NONE" name="foto" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x85nEFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0ElsUFOFEeq-3pA_APo8uw" position="-408.6963959837388,257.3589996030899"/>
+      <stereotypes xmi:id="_HWUzYFPhEeq3VMlT_NP9Ag" name="Annotations">
+        <modelElement href="Andes-Wine-Tour.uml#_x9A70FOFEeq-3pA_APo8uw"/>
+      </stereotypes>
       <visibility xmi:id="_y_Qb8VOFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_y_Qb8FOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_y_Qb8FOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zAr_UFOFEeq-3pA_APo8uw" sourceAnchor="83.0,0.0" targetAnchor="128.0,28.0" target="_y_hhsFOFEeq-3pA_APo8uw" source="_zAz7IFOFEeq-3pA_APo8uw">
     <modelElement href="Andes-Wine-Tour.uml#_yEOXEVOFEeq-3pA_APo8uw"/>
     <bendpoints xmi:id="_0EbUQFOFEeq-3pA_APo8uw" sourceY="-310" targetX="195"/>
-    <stereotypes xmi:id="_zAt0gFOFEeq-3pA_APo8uw" name="Reference">
-      <modelElement href="Andes-Wine-Tour.uml#_yEYvIFOFEeq-3pA_APo8uw"/>
-    </stereotypes>
     <nameVisual xmi:id="_zAtNcVOFEeq-3pA_APo8uw" text="">
       <visualProperties xmi:id="_0EnhgFOFEeq-3pA_APo8uw" position="-9.614146503777704,286.13193372151534"/>
     </nameVisual>
@@ -100,8 +103,11 @@
     <targetRole xmi:id="_zAtNc1OFEeq-3pA_APo8uw" aggregationKind="NONE" name="foto" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x57yoFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0EnhgVOFEeq-3pA_APo8uw" position="188.26511649921707,296.96557712234534"/>
+      <stereotypes xmi:id="_HWVacFPhEeq3VMlT_NP9Ag" name="Annotations">
+        <modelElement href="Andes-Wine-Tour.uml#_x6AEEFOFEeq-3pA_APo8uw"/>
+      </stereotypes>
       <visibility xmi:id="_zAxe4VOFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_zAxe4FOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_zAxe4FOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zAtNcFOFEeq-3pA_APo8uw" sourceAnchor="193.0,67.0" targetAnchor="83.0,151.0" target="_zAz7IFOFEeq-3pA_APo8uw" source="_zCYocFOFEeq-3pA_APo8uw">
@@ -113,6 +119,9 @@
     <sourceRole xmi:id="_zAw30FOFEeq-3pA_APo8uw" aggregationKind="NONE" name="departamento" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x6ArIFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0E6ccFOFEeq-3pA_APo8uw" position="-2.7069189294761387,-12.697027702820094"/>
+      <stereotypes xmi:id="_HWWBgFPhEeq3VMlT_NP9Ag" name="JoinColumns">
+        <modelElement href="Andes-Wine-Tour.uml#_uHnsEFPcEeq3VMlT_NP9Ag"/>
+      </stereotypes>
       <visibility xmi:id="_zAyF8VOFEeq-3pA_APo8uw" label="+"/>
       <cardinality xmi:id="_zAyF8FOFEeq-3pA_APo8uw" label="0..1" max="1"/>
     </sourceRole>
@@ -142,6 +151,12 @@
     <targetRole xmi:id="_zBEZ0lOFEeq-3pA_APo8uw" aggregationKind="NONE" name="foto" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_yAXx0FOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0Ep9wFOFEeq-3pA_APo8uw" position="477.5666666666666,119.80000000000001"/>
+      <stereotypes xmi:id="_HWXPoFPhEeq3VMlT_NP9Ag" name="LegacyStyledElement">
+        <modelElement href="Andes-Wine-Tour.uml#_yAYY4FOFEeq-3pA_APo8uw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HWXPoVPhEeq3VMlT_NP9Ag" name="Annotations">
+        <modelElement href="Andes-Wine-Tour.uml#_yAY_8FOFEeq-3pA_APo8uw"/>
+      </stereotypes>
       <visibility xmi:id="_zBLHgVOFEeq-3pA_APo8uw" label="-"/>
       <cardinality xmi:id="_zBLHgFOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
     </targetRole>
@@ -150,9 +165,6 @@
     <modelElement href="Andes-Wine-Tour.uml#_yD6OAFOFEeq-3pA_APo8uw"/>
     <bendpoints xmi:id="_0EciYFOFEeq-3pA_APo8uw" sourceY="-383" targetX="-656" targetY="-45"/>
     <bendpoints xmi:id="_0EciYVOFEeq-3pA_APo8uw" sourceX="656" sourceY="-383" targetY="-45"/>
-    <stereotypes xmi:id="_zBi68FOFEeq-3pA_APo8uw" name="Reference">
-      <modelElement href="Andes-Wine-Tour.uml#_yECw4FOFEeq-3pA_APo8uw"/>
-    </stereotypes>
     <nameVisual xmi:id="_zBiT4FOFEeq-3pA_APo8uw" text="">
       <visualProperties xmi:id="_0EsaAFOFEeq-3pA_APo8uw" position="-358.20000000000005,366.1"/>
     </nameVisual>
@@ -165,8 +177,11 @@
     <targetRole xmi:id="_zBiT4lOFEeq-3pA_APo8uw" aggregationKind="NONE" name="foto" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x2uGkFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0EtoIFOFEeq-3pA_APo8uw" position="-685.9,359.2"/>
+      <stereotypes xmi:id="_HWX2sFPhEeq3VMlT_NP9Ag" name="Annotations">
+        <modelElement href="Andes-Wine-Tour.uml#_x2xw8FOFEeq-3pA_APo8uw"/>
+      </stereotypes>
       <visibility xmi:id="_zBpooFOFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_zBpBkVOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_zBpBkVOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zBhs0FOFEeq-3pA_APo8uw" sourceAnchor="0.0,67.0" targetAnchor="84.0,151.0" target="_zBuhIFOFEeq-3pA_APo8uw" source="_zCYocFOFEeq-3pA_APo8uw">
@@ -191,9 +206,6 @@
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zB7VcFOFEeq-3pA_APo8uw" sourceAnchor="0.0,75.0" targetAnchor="5.0,56.0" target="_y_hhsFOFEeq-3pA_APo8uw" source="_zCFtgFOFEeq-3pA_APo8uw">
     <modelElement href="Andes-Wine-Tour.uml#_yEhSAFOFEeq-3pA_APo8uw"/>
     <bendpoints xmi:id="_0EdJcFOFEeq-3pA_APo8uw" sourceX="-39" targetY="693"/>
-    <stereotypes xmi:id="_zB9xsVOFEeq-3pA_APo8uw" name="Reference">
-      <modelElement href="Andes-Wine-Tour.uml#_yEomwFOFEeq-3pA_APo8uw"/>
-    </stereotypes>
     <nameVisual xmi:id="_zB9KoFOFEeq-3pA_APo8uw" text="">
       <visualProperties xmi:id="_0EwrcFOFEeq-3pA_APo8uw" position="0.07024179403751418,0.15080971680038147"/>
     </nameVisual>
@@ -206,8 +218,11 @@
     <targetRole xmi:id="_zB9xsFOFEeq-3pA_APo8uw" aggregationKind="NONE" name="foto" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x-7AUFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0ExSgFOFEeq-3pA_APo8uw" position="38.815172952856216,681.7642957983396"/>
+      <stereotypes xmi:id="_HWZE0FPhEeq3VMlT_NP9Ag" name="Annotations">
+        <modelElement href="Andes-Wine-Tour.uml#_x--DoFOFEeq-3pA_APo8uw"/>
+      </stereotypes>
       <visibility xmi:id="_zCBcElOFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_zCBcEVOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_zCBcEVOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zB9xslOFEeq-3pA_APo8uw" sourceAnchor="84.0,151.0" targetAnchor="67.0,75.0" target="_zCYocFOFEeq-3pA_APo8uw" source="_zCFtgFOFEeq-3pA_APo8uw">
@@ -229,6 +244,12 @@
     <targetRole xmi:id="_zCCqMFOFEeq-3pA_APo8uw" aggregationKind="NONE" name="departamento" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x--qsVOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0EzuwVOFEeq-3pA_APo8uw" position="237.92952757539666,264.58562746191046"/>
+      <stereotypes xmi:id="_HWZr4FPhEeq3VMlT_NP9Ag" name="LegacyStyledElement">
+        <modelElement href="Andes-Wine-Tour.uml#_x-_RwFOFEeq-3pA_APo8uw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HWaS8FPhEeq3VMlT_NP9Ag" name="Annotations">
+        <modelElement href="Andes-Wine-Tour.uml#_x-_40FOFEeq-3pA_APo8uw"/>
+      </stereotypes>
       <visibility xmi:id="_zCEfYFOFEeq-3pA_APo8uw" label="-"/>
       <cardinality xmi:id="_zCD4UlOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
     </targetRole>
@@ -238,9 +259,6 @@
     <bendpoints xmi:id="_0EgMwVOFEeq-3pA_APo8uw" sourceX="45" targetX="632" targetY="442"/>
     <bendpoints xmi:id="_0EgMwlOFEeq-3pA_APo8uw" sourceX="45" sourceY="-517" targetX="632" targetY="-75"/>
     <bendpoints xmi:id="_0Egz0FOFEeq-3pA_APo8uw" sourceX="-587" sourceY="-517" targetY="-75"/>
-    <stereotypes xmi:id="_zCmD1FOFEeq-3pA_APo8uw" name="Reference">
-      <modelElement href="Andes-Wine-Tour.uml#_yEOXEFOFEeq-3pA_APo8uw"/>
-    </stereotypes>
     <nameVisual xmi:id="_zCmD0VOFEeq-3pA_APo8uw" text="">
       <visualProperties xmi:id="_0FC_UFOFEeq-3pA_APo8uw" position="-11.881204973382069,501.4289321881345"/>
     </nameVisual>
@@ -253,8 +271,14 @@
     <targetRole xmi:id="_zCmD01OFEeq-3pA_APo8uw" aggregationKind="NONE" name="foto" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x4fBIFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0FDmYFOFEeq-3pA_APo8uw" position="612.340620433566,408.8933982822018"/>
+      <stereotypes xmi:id="_HWa6AFPhEeq3VMlT_NP9Ag" name="Annotations">
+        <modelElement href="Andes-Wine-Tour.uml#_x4jSkFOFEeq-3pA_APo8uw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HWbhEFPhEeq3VMlT_NP9Ag" name="JoinColumns">
+        <modelElement href="Andes-Wine-Tour.uml#_uHtysFPcEeq3VMlT_NP9Ag"/>
+      </stereotypes>
       <visibility xmi:id="_zCpHJVOFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_zCpHJFOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_zCpHJFOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_zCkOoFOFEeq-3pA_APo8uw" sourceAnchor="97.0,75.0" targetAnchor="83.0,94.0" target="_zCq8UFOFEeq-3pA_APo8uw" source="_zCYocFOFEeq-3pA_APo8uw">
@@ -267,6 +291,9 @@
     <sourceRole xmi:id="_zClcwVOFEeq-3pA_APo8uw" aggregationKind="NONE" name="departamento" navigable="true">
       <modelElement href="Andes-Wine-Tour.uml#_x4kgsFOFEeq-3pA_APo8uw"/>
       <visualProperties xmi:id="_0E-G0FOFEeq-3pA_APo8uw" position="-34.25543678231773,24.476694200885902"/>
+      <stereotypes xmi:id="_HWcIIFPhEeq3VMlT_NP9Ag" name="JoinColumns">
+        <modelElement href="Andes-Wine-Tour.uml#_uHvA0FPcEeq3VMlT_NP9Ag"/>
+      </stereotypes>
       <visibility xmi:id="_zCogEVOFEeq-3pA_APo8uw" label="+"/>
       <cardinality xmi:id="_zCogEFOFEeq-3pA_APo8uw" label="0..1" max="1"/>
     </sourceRole>
@@ -367,22 +394,22 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
-    <attributes xmi:id="_y7YBqFOFEeq-3pA_APo8uw" name="foto">
+    <attributes xmi:id="_y7YBqFOFEeq-3pA_APo8uw" defaultValue="new ArrayList&lt;>()" name="foto">
       <modelElement href="Andes-Wine-Tour.uml#_x0i8UFOFEeq-3pA_APo8uw"/>
-      <stereotypes xmi:id="_y7YBqVOFEeq-3pA_APo8uw" name="LegacyStyledElement">
-        <modelElement href="Andes-Wine-Tour.uml#_x0jjYFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_y7YBqlOFEeq-3pA_APo8uw" name="Annotations">
-        <modelElement href="Andes-Wine-Tour.uml#_x0794FOFEeq-3pA_APo8uw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_HXLvAFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXOLQFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HX45oFPhEeq3VMlT_NP9Ag" name="Annotations"/>
       <visibility xmi:id="_y7YBq1OFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_y7YBrFOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_y7YBrFOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_y7YBrVOFEeq-3pA_APo8uw" name="Foto">
         <modelElement href="Andes-Wine-Tour.uml#_xOJDoFOFEeq-3pA_APo8uw"/>
       </type>
     </attributes>
     <attributes xmi:id="_y7YBrlOFEeq-3pA_APo8uw" name="departamento">
       <modelElement href="Andes-Wine-Tour.uml#_x1IyMFOFEeq-3pA_APo8uw"/>
+      <stereotypes xmi:id="_HXHdkFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HXJSwFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HX6HwFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
       <visibility xmi:id="_y7YBr1OFEeq-3pA_APo8uw" label="+"/>
       <cardinality xmi:id="_y7YBsFOFEeq-3pA_APo8uw" label="0..1" max="1"/>
       <type xmi:id="_y7YBsVOFEeq-3pA_APo8uw" name="Departamento">
@@ -469,22 +496,22 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
-    <attributes xmi:id="_y_SRRFOFEeq-3pA_APo8uw" name="foto">
+    <attributes xmi:id="_y_SRRFOFEeq-3pA_APo8uw" defaultValue="new ArrayList&lt;>()" name="foto">
       <modelElement href="Andes-Wine-Tour.uml#_x85nEFOFEeq-3pA_APo8uw"/>
-      <stereotypes xmi:id="_y_SRRVOFEeq-3pA_APo8uw" name="LegacyStyledElement">
-        <modelElement href="Andes-Wine-Tour.uml#_x861MFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_y_SRRlOFEeq-3pA_APo8uw" name="Annotations">
-        <modelElement href="Andes-Wine-Tour.uml#_x9A70FOFEeq-3pA_APo8uw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_HXUR4FPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXWuIFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HX8kAFPhEeq3VMlT_NP9Ag" name="Annotations"/>
       <visibility xmi:id="_y_SRR1OFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_y_SRSFOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_y_SRSFOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_y_SRSVOFEeq-3pA_APo8uw" name="Foto">
         <modelElement href="Andes-Wine-Tour.uml#_xOJDoFOFEeq-3pA_APo8uw"/>
       </type>
     </attributes>
     <attributes xmi:id="_y_SRSlOFEeq-3pA_APo8uw" name="departamento">
       <modelElement href="Andes-Wine-Tour.uml#_x9Bi4FOFEeq-3pA_APo8uw"/>
+      <stereotypes xmi:id="_HXQAcFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HXR1oFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HX9yIFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
       <visibility xmi:id="_y_SRS1OFEeq-3pA_APo8uw" label="+"/>
       <cardinality xmi:id="_y_SRTFOFEeq-3pA_APo8uw" label="0..1" max="1"/>
       <type xmi:id="_y_SRTVOFEeq-3pA_APo8uw" name="Departamento">
@@ -596,22 +623,22 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
-    <attributes xmi:id="_zAz7RFOFEeq-3pA_APo8uw" name="foto">
+    <attributes xmi:id="_zAz7RFOFEeq-3pA_APo8uw" defaultValue="new ArrayList&lt;>()" name="foto">
       <modelElement href="Andes-Wine-Tour.uml#_x57yoFOFEeq-3pA_APo8uw"/>
-      <stereotypes xmi:id="_zAz7RVOFEeq-3pA_APo8uw" name="LegacyStyledElement">
-        <modelElement href="Andes-Wine-Tour.uml#_x58ZsFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_zAz7RlOFEeq-3pA_APo8uw" name="Annotations">
-        <modelElement href="Andes-Wine-Tour.uml#_x6AEEFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_HXZKYFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXa_kFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HYAOYFPhEeq3VMlT_NP9Ag" name="Annotations"/>
       <visibility xmi:id="_zAz7R1OFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_zAz7SFOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_zAz7SFOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_zAz7SVOFEeq-3pA_APo8uw" name="Foto">
         <modelElement href="Andes-Wine-Tour.uml#_xOJDoFOFEeq-3pA_APo8uw"/>
       </type>
     </attributes>
     <attributes xmi:id="_zAz7SlOFEeq-3pA_APo8uw" name="departamento">
       <modelElement href="Andes-Wine-Tour.uml#_x6ArIFOFEeq-3pA_APo8uw"/>
+      <stereotypes xmi:id="_HXc0wFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HXeC4FPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HYBcgFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
       <visibility xmi:id="_zAz7S1OFEeq-3pA_APo8uw" label="+"/>
       <cardinality xmi:id="_zAz7TFOFEeq-3pA_APo8uw" label="0..1" max="1"/>
       <type xmi:id="_zAz7TVOFEeq-3pA_APo8uw" name="Departamento">
@@ -689,12 +716,12 @@
     </attributes>
     <attributes xmi:id="_zBOx_1OFEeq-3pA_APo8uw" name="foto">
       <modelElement href="Andes-Wine-Tour.uml#_yAXx0FOFEeq-3pA_APo8uw"/>
-      <stereotypes xmi:id="_zBOyAFOFEeq-3pA_APo8uw" name="LegacyStyledElement">
-        <modelElement href="Andes-Wine-Tour.uml#_yAYY4FOFEeq-3pA_APo8uw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_zBOyAVOFEeq-3pA_APo8uw" name="Annotations">
-        <modelElement href="Andes-Wine-Tour.uml#_yAY_8FOFEeq-3pA_APo8uw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_HXgfIFPhEeq3VMlT_NP9Ag" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HXhtQFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXkJgFPhEeq3VMlT_NP9Ag" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HXlXoFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HYD4wFPhEeq3VMlT_NP9Ag" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HYEf0FPhEeq3VMlT_NP9Ag" name="Annotations"/>
       <visibility xmi:id="_zBOyAlOFEeq-3pA_APo8uw" label="-"/>
       <cardinality xmi:id="_zBOyA1OFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
       <type xmi:id="_zBOyBFOFEeq-3pA_APo8uw" name="Foto">
@@ -814,16 +841,13 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
-    <attributes xmi:id="_zBuhRFOFEeq-3pA_APo8uw" name="foto">
+    <attributes xmi:id="_zBuhRFOFEeq-3pA_APo8uw" defaultValue="new ArrayList&lt;>()" name="foto">
       <modelElement href="Andes-Wine-Tour.uml#_x2uGkFOFEeq-3pA_APo8uw"/>
-      <stereotypes xmi:id="_zBuhRVOFEeq-3pA_APo8uw" name="LegacyStyledElement">
-        <modelElement href="Andes-Wine-Tour.uml#_x2utoFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_zBuhRlOFEeq-3pA_APo8uw" name="Annotations">
-        <modelElement href="Andes-Wine-Tour.uml#_x2xw8FOFEeq-3pA_APo8uw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_HXmlwFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXnz4FPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HYG8EFPhEeq3VMlT_NP9Ag" name="Annotations"/>
       <visibility xmi:id="_zBuhR1OFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_zBuhSFOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_zBuhSFOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_zBuhSVOFEeq-3pA_APo8uw" name="Foto">
         <modelElement href="Andes-Wine-Tour.uml#_xOJDoFOFEeq-3pA_APo8uw"/>
       </type>
@@ -916,28 +940,25 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
-    <attributes xmi:id="_zCFtpFOFEeq-3pA_APo8uw" name="foto">
+    <attributes xmi:id="_zCFtpFOFEeq-3pA_APo8uw" defaultValue="new ArrayList&lt;>()" name="foto">
       <modelElement href="Andes-Wine-Tour.uml#_x-7AUFOFEeq-3pA_APo8uw"/>
-      <stereotypes xmi:id="_zCFtpVOFEeq-3pA_APo8uw" name="LegacyStyledElement">
-        <modelElement href="Andes-Wine-Tour.uml#_x-7nYFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_zCFtplOFEeq-3pA_APo8uw" name="Annotations">
-        <modelElement href="Andes-Wine-Tour.uml#_x--DoFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_HXppEFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXq3MFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HYJYUFPhEeq3VMlT_NP9Ag" name="Annotations"/>
       <visibility xmi:id="_zCFtp1OFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_zCFtqFOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_zCFtqFOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_zCFtqVOFEeq-3pA_APo8uw" name="Foto">
         <modelElement href="Andes-Wine-Tour.uml#_xOJDoFOFEeq-3pA_APo8uw"/>
       </type>
     </attributes>
     <attributes xmi:id="_zCFtqlOFEeq-3pA_APo8uw" name="departamento">
       <modelElement href="Andes-Wine-Tour.uml#_x--qsVOFEeq-3pA_APo8uw"/>
-      <stereotypes xmi:id="_zCFtq1OFEeq-3pA_APo8uw" name="LegacyStyledElement">
-        <modelElement href="Andes-Wine-Tour.uml#_x-_RwFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_zCFtrFOFEeq-3pA_APo8uw" name="Annotations">
-        <modelElement href="Andes-Wine-Tour.uml#_x-_40FOFEeq-3pA_APo8uw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_HXssYFPhEeq3VMlT_NP9Ag" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HXtTcFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXuhkFPhEeq3VMlT_NP9Ag" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HXvIoFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HYJ_YFPhEeq3VMlT_NP9Ag" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HYLNgFPhEeq3VMlT_NP9Ag" name="Annotations"/>
       <visibility xmi:id="_zCFtrVOFEeq-3pA_APo8uw" label="-"/>
       <cardinality xmi:id="_zCFtrlOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
       <type xmi:id="_zCFtr1OFEeq-3pA_APo8uw" name="Departamento">
@@ -1027,22 +1048,25 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
-    <attributes xmi:id="_zCq8ZVOFEeq-3pA_APo8uw" name="foto">
+    <attributes xmi:id="_zCq8ZVOFEeq-3pA_APo8uw" defaultValue="new ArrayList&lt;>()" name="foto">
       <modelElement href="Andes-Wine-Tour.uml#_x4fBIFOFEeq-3pA_APo8uw"/>
-      <stereotypes xmi:id="_zCq8ZlOFEeq-3pA_APo8uw" name="LegacyStyledElement">
-        <modelElement href="Andes-Wine-Tour.uml#_x4foMFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_zCq8Z1OFEeq-3pA_APo8uw" name="Annotations">
-        <modelElement href="Andes-Wine-Tour.uml#_x4jSkFOFEeq-3pA_APo8uw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_HXw90FPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXxk4FPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HXyzAFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HXzaEFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HYNCsFPhEeq3VMlT_NP9Ag" name="Annotations"/>
+      <stereotypes xmi:id="_HYNpwFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
       <visibility xmi:id="_zCq8aFOFEeq-3pA_APo8uw" label="+"/>
-      <cardinality xmi:id="_zCq8aVOFEeq-3pA_APo8uw" label="1" max="1" min="1"/>
+      <cardinality xmi:id="_zCq8aVOFEeq-3pA_APo8uw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_zCq8alOFEeq-3pA_APo8uw" name="Foto">
         <modelElement href="Andes-Wine-Tour.uml#_xOJDoFOFEeq-3pA_APo8uw"/>
       </type>
     </attributes>
     <attributes xmi:id="_zCq8a1OFEeq-3pA_APo8uw" name="departamento">
       <modelElement href="Andes-Wine-Tour.uml#_x4kgsFOFEeq-3pA_APo8uw"/>
+      <stereotypes xmi:id="_HX0oMFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HX12UFPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
+      <stereotypes xmi:id="_HYOQ0FPhEeq3VMlT_NP9Ag" name="JoinColumns"/>
       <visibility xmi:id="_zCq8bFOFEeq-3pA_APo8uw" label="+"/>
       <cardinality xmi:id="_zCq8bVOFEeq-3pA_APo8uw" label="0..1" max="1"/>
       <type xmi:id="_zCq8blOFEeq-3pA_APo8uw" name="Departamento">
