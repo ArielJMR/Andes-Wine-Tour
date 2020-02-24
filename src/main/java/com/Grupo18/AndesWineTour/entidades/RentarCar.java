@@ -3,35 +3,30 @@ package com.Grupo18.AndesWineTour.entidades;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
 
 @Entity
+@Table(name="rentarcar")
 public class RentarCar {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "Cod_Rentar_Car")
-	private String id;
-	@Column(name = "Nombre_Rentar_Car")
+	@GeneratedValue(generator = "uuid")
+	@GenericGenerator(name = "uuid" , strategy = "uuid2")	private String id;
 	private String nombre;
-	@Column(name = "Direccion_Rentar_Car")
+	private String descripcion;
 	private String direccion;
-	@Column(name = "Telefono_Rentar_Car")
 	private String telefono;
-	@Column(name = "Correo_Rentar_Car")
 	private String correo;
-	@Column(name = "Link_Rentar_Car")
 	private String link;
 	@OneToMany
 	private List<Foto> foto = new ArrayList<>();
 	@OneToOne
-	@JoinColumn(name = "Cod_Departamento")
 	private Departamento departamento;
 	public String getId() {
 		return id;
@@ -68,6 +63,12 @@ public class RentarCar {
 	}
 	public void setLink(String link) {
 		this.link = link;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 	public List<Foto> getFoto() {
 		return foto;

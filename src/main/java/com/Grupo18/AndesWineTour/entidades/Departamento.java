@@ -1,19 +1,20 @@
 package com.Grupo18.AndesWineTour.entidades;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
 
 @Entity
+@Table(name = "departamento")
 public class Departamento {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "Cod_Departamento")
+	@GeneratedValue(generator = "uuid")
+	@GenericGenerator(name = "uuid" , strategy = "uuid2")
 	private String id;
 	
-	@Column(name = "Nombre_Departamento")
 	private String departamento;
 	
 	public String getId() {
