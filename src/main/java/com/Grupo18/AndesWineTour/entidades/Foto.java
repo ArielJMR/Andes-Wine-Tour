@@ -21,7 +21,7 @@ public class Foto {
 	private String mime;
 	
 	@Lob @Basic(fetch = FetchType.LAZY)
-	private byte contenido;
+	private byte[] contenido;
 	
 	
 	public String getNombre() {
@@ -36,11 +36,11 @@ public class Foto {
 	public void setMime(String mime) {
 		this.mime = mime;
 	}
-	public byte getContenido() {
+	public byte[] getContenido() {
 		return contenido;
 	}
-	public void setContenido(byte contenido) {
-		this.contenido = contenido;
+	public void setContenido(byte[] bs) {
+		this.contenido = bs;
 	}
 	public String getId() {
 		return id;
