@@ -28,6 +28,7 @@ public class RentarCar {
 	private List<Foto> foto = new ArrayList<>();
 	@OneToOne
 	private Departamento departamento;
+
 	public String getId() {
 		return id;
 	}

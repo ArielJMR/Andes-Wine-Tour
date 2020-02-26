@@ -15,7 +15,7 @@ public class Departamento {
 	@GenericGenerator(name = "uuid" , strategy = "uuid2")
 	private String id;
 	
-	private String departamento;
+	private String nombre;
 	
 	public String getId() {
 		return id;
@@ -23,11 +23,11 @@ public class Departamento {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getDepartamento() {
-		return departamento;
+	public String getNombre() {
+		return nombre;
 	}
-	public void setDepartamento(String departamento) {
-		this.departamento = departamento;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 	
 }
