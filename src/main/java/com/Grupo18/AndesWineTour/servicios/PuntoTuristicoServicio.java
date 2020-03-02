@@ -8,9 +8,12 @@ import com.Grupo18.AndesWineTour.repositorios.PuntoTuristicoRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+<<<<<<< HEAD
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
+=======
+>>>>>>> a08f7ffad7cf46a02ee1ecf9b1a6d0482ecf0704
 import java.util.Optional;
 
 @Service

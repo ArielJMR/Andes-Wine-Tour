@@ -1,18 +1,25 @@
 package com.Grupo18.AndesWineTour.servicios;
 
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Optional;
 
+<<<<<<< HEAD
 import com.Grupo18.AndesWineTour.entidades.*;
+=======
+import com.Grupo18.AndesWineTour.entidades.Departamento;
+import com.Grupo18.AndesWineTour.entidades.Foto;
+>>>>>>> a08f7ffad7cf46a02ee1ecf9b1a6d0482ecf0704
 import com.Grupo18.AndesWineTour.error.ErrorServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Grupo18.AndesWineTour.repositorios.RestauranteRepositorio;
 
+<<<<<<< HEAD
 import javax.transaction.Transactional;
 
+=======
+>>>>>>> a08f7ffad7cf46a02ee1ecf9b1a6d0482ecf0704
 
 @Service
 public class RestauranteServicio {

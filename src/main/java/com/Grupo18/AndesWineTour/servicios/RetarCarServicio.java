@@ -1,14 +1,24 @@
 package com.Grupo18.AndesWineTour.servicios;
 
+<<<<<<< HEAD
 import com.Grupo18.AndesWineTour.entidades.*;
+=======
+import com.Grupo18.AndesWineTour.entidades.Departamento;
+import com.Grupo18.AndesWineTour.entidades.Foto;
+import com.Grupo18.AndesWineTour.entidades.RentarCar;
+>>>>>>> a08f7ffad7cf46a02ee1ecf9b1a6d0482ecf0704
 import com.Grupo18.AndesWineTour.error.ErrorServicio;
 import com.Grupo18.AndesWineTour.repositorios.RentarCarRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+<<<<<<< HEAD
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
+=======
+
+>>>>>>> a08f7ffad7cf46a02ee1ecf9b1a6d0482ecf0704
 import java.util.Optional;
 
 @Service
