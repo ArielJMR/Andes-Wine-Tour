@@ -2,17 +2,12 @@ package com.Grupo18.AndesWineTour.servicios;
 
 import com.Grupo18.AndesWineTour.entidades.Departamento;
 import com.Grupo18.AndesWineTour.entidades.Foto;
-import com.Grupo18.AndesWineTour.entidades.Hotel;
 import com.Grupo18.AndesWineTour.entidades.PuntoTuristico;
 import com.Grupo18.AndesWineTour.error.ErrorServicio;
 import com.Grupo18.AndesWineTour.repositorios.PuntoTuristicoRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 @Service

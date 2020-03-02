@@ -1,7 +1,6 @@
 package com.Grupo18.AndesWineTour.servicios;
 
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Optional;
 
 import com.Grupo18.AndesWineTour.entidades.Departamento;
@@ -13,8 +12,6 @@ import org.springframework.stereotype.Service;
 import com.Grupo18.AndesWineTour.entidades.Hotel;
 import com.Grupo18.AndesWineTour.repositorios.HotelRepositorio;
 
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 
 @Service
 public class HotelServicio {

@@ -9,8 +9,11 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.Length;
 
 @Entity
 @Table(name = "usuario")
@@ -19,10 +22,19 @@ public class Usuario {
 	@GeneratedValue(generator = "uuid")
 	@GenericGenerator(name = "uuid" , strategy = "uuid2")	
 	private String id;
+	@NotEmpty
+	@Length(min=5, max=24)
 	private String username;
+	@NotEmpty
+	@Length(min=5, max=24)
 	private String nombre;
+	@NotEmpty
+	@Length(min=5, max=24)
 	private String apellido;
+	@NotEmpty @Email
 	private String email;
+	@NotEmpty
+	@Length(min=8)
 	private String contraseña;
 	
 	@OneToOne

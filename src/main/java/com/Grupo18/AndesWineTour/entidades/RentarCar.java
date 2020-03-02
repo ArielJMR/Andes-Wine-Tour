@@ -9,20 +9,34 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.Length;
 
 @Entity
 @Table(name="rentarcar")
 public class RentarCar {
 	@Id
 	@GeneratedValue(generator = "uuid")
-	@GenericGenerator(name = "uuid" , strategy = "uuid2")	private String id;
+	@GenericGenerator(name = "uuid" , strategy = "uuid2")	
+	private String id;
+	@NotEmpty
+	@Length(min=5, max=24)
 	private String nombre;
+	@NotEmpty
+	@Length(min=0, max=240)
 	private String descripcion;
+	@NotEmpty
+	@Length(min=5)
 	private String direccion;
+	@NotEmpty
+	@Length(min=5, max=24)
 	private String telefono;
+	@NotEmpty @Email
 	private String correo;
+	@NotEmpty
 	private String link;
 	@OneToMany
 	private List<Foto> foto = new ArrayList<>();
