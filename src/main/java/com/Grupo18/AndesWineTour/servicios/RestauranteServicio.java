@@ -11,15 +11,16 @@ import org.springframework.stereotype.Service;
 
 import com.Grupo18.AndesWineTour.repositorios.RestauranteRepositorio;
 
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.transaction.Transactional;
+
 
 @Service
 public class RestauranteServicio {
-	
+
 	@Autowired
 	private RestauranteRepositorio restauranteRepositorio;
 
+	@Transactional
 	public void guardarRestaurante (String nombre, String direccion, String telefono,String correo,String link, Foto foto, Departamento departamento) throws ErrorServicio {
 		validar(nombre,direccion,telefono,correo,link,foto,departamento);
 
@@ -36,6 +37,7 @@ public class RestauranteServicio {
 
 	}
 
+	@Transactional
 	public void eliminarRestaurante (String id) throws ErrorServicio{
 		if (id.isEmpty() || id== null){
 			throw new ErrorServicio("no puede estar vacio el campo de id o ser nulo");
@@ -52,6 +54,7 @@ public class RestauranteServicio {
 		}
 	}
 
+	@Transactional
 	public void modificarRestaurante (String id,String nombre, String direccion, String telefono,String correo,String link, Departamento departamento) throws ErrorServicio{
 		validar(nombre, direccion,telefono,correo,link,departamento);
 
@@ -72,6 +75,7 @@ public class RestauranteServicio {
 		}
 	}
 
+@Transactional
 	public List<Restaurante> buscarRestaurante(String nombre) throws ErrorServicio{
 		List <Restaurante> respuesta= new ArrayList<Restaurante>();
 		respuesta =restauranteRepositorio.buscarRestaurantePorNombre(nombre);
@@ -147,3 +151,4 @@ public class RestauranteServicio {
 		}
 	}
 }
+

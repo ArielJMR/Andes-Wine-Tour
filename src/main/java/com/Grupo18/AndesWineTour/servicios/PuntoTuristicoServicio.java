@@ -2,15 +2,13 @@ package com.Grupo18.AndesWineTour.servicios;
 
 import com.Grupo18.AndesWineTour.entidades.Departamento;
 import com.Grupo18.AndesWineTour.entidades.Foto;
-import com.Grupo18.AndesWineTour.entidades.Hotel;
 import com.Grupo18.AndesWineTour.entidades.PuntoTuristico;
 import com.Grupo18.AndesWineTour.error.ErrorServicio;
 import com.Grupo18.AndesWineTour.repositorios.PuntoTuristicoRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -20,6 +18,7 @@ public class PuntoTuristicoServicio {
     @Autowired
     private PuntoTuristicoRepositorio puntoTuristicoRepositorio;
 
+    @Transactional
     public void guardarPuntoTuristico(String nombre, String descripcion, String direccion, Foto foto, Departamento departamento) throws ErrorServicio {
         validar(nombre, descripcion, direccion, foto, departamento);
 
@@ -34,6 +33,7 @@ public class PuntoTuristicoServicio {
 
     }
 
+    @Transactional
     public void eliminarPuntoTuristico(String id) throws ErrorServicio {
         if (id.isEmpty() || id == null) {
             throw new ErrorServicio("no puede estar vacio el campo de id o ser nulo");
@@ -50,6 +50,7 @@ public class PuntoTuristicoServicio {
         }
     }
 
+    @Transactional
     public List<PuntoTuristico> buscarTodosPuntoTuristico() throws ErrorServicio{
         List <PuntoTuristico> respuesta= new ArrayList<PuntoTuristico>();
         respuesta =puntoTuristicoRepositorio.findAll();
@@ -59,6 +60,7 @@ public class PuntoTuristicoServicio {
         return respuesta;
     }
 
+    @Transactional
     public List<PuntoTuristico> buscarPuntoTuristico(String nombre) throws ErrorServicio{
         List <PuntoTuristico> respuesta= new ArrayList<PuntoTuristico>();
         respuesta =puntoTuristicoRepositorio.buscarPuntoTuristicoPorNombre(nombre);
@@ -68,6 +70,7 @@ public class PuntoTuristicoServicio {
         return respuesta;
     }
 
+    @Transactional
     public void agregarFotos(List<Foto> fotos, String id) throws ErrorServicio{
 
         if (fotos.isEmpty()){
@@ -85,6 +88,8 @@ public class PuntoTuristicoServicio {
             puntoTuristicoRepositorio.save(puntoTuristico);
         }
     }
+
+    @Transactional
     public void modificarPuntoTuristico(String id,String nombre, String descripcion, String direccion, Departamento departamento) throws ErrorServicio{
         validar(nombre, descripcion, direccion, departamento);
         if (id==null || id.isEmpty()){
@@ -151,3 +156,4 @@ public class PuntoTuristicoServicio {
         }
     }
 }
+

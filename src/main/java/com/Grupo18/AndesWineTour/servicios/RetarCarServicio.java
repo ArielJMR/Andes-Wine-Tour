@@ -6,8 +6,7 @@ import com.Grupo18.AndesWineTour.repositorios.RentarCarRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -18,6 +17,7 @@ public class RetarCarServicio {
     @Autowired
     private RentarCarRepositorio rentarCarRepositorio;
 
+    @Transactional
     public void guardarRentarCar (String nombre,String descripcion, String direccion, String telefono,String correo,String link, Foto foto, Departamento departamento) throws ErrorServicio {
         validar(nombre, descripcion,direccion,telefono,correo,link,foto,departamento);
 
@@ -35,6 +35,7 @@ public class RetarCarServicio {
 
     }
 
+    @Transactional
     public void modificarRentACar (String id,String descripcion,String nombre, String direccion, String telefono,String correo,String link, Departamento departamento) throws ErrorServicio{
         validar(nombre, descripcion, direccion,telefono,correo,link,departamento);
 
@@ -56,6 +57,7 @@ public class RetarCarServicio {
         }
     }
 
+    @Transactional
     public List<RentarCar> buscarRentACar(String nombre) throws ErrorServicio{
         List <RentarCar> respuesta= new ArrayList<RentarCar>();
         respuesta =rentarCarRepositorio.buscarRentarCarPorNombre(nombre);
@@ -64,6 +66,8 @@ public class RetarCarServicio {
         }
         return respuesta;
     }
+
+    @Transactional
     public void eliminarRentarCar (String id) throws ErrorServicio{
         if (id.isEmpty() || id== null){
             throw new ErrorServicio("no puede estar vacio el campo de id o ser nulo");
