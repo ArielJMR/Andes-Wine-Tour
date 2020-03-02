@@ -3,36 +3,44 @@ package com.Grupo18.AndesWineTour.entidades;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.Length;
 
 @Entity
+@Table(name="restaurate")
 public class Restaurante {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "Cod_Restaurante")
-	private String id;
-	@Column(name = "Nombre_Restaurante")
+	@GeneratedValue(generator = "uuid")
+	@GenericGenerator(name = "uuid" , strategy = "uuid2")
+    private String id;
+	@NotEmpty
+	@Length(min=5, max=24)
 	private String nombre;
-	@Column(name = "Direccion_Restaurante")
+	@NotEmpty
+	@Length(min=5, max=120)
 	private String direccion;
-	@Column(name = "Telefono_Restaurante")
+	@NotEmpty
+	@Length(min=5, max=24)
 	private String telefono;
-	@Column(name = "Correo_Restaurante")
+	@NotEmpty @Email
 	private String correo;
-	@Column(name = "Link_Restaurante")
+	@NotEmpty
+	
 	private String link;
+	
 	@OneToMany
 	private List<Foto> foto = new ArrayList<>();
 	
 	@OneToOne
-	@JoinColumn(name = "Cod_Departamento")
 	private Departamento departamento;
 	
 	public String getId() {
@@ -71,11 +79,19 @@ public class Restaurante {
 	public void setLink(String link) {
 		this.link = link;
 	}
+	
 	public List<Foto> getFoto() {
 		return foto;
 	}
 	public void setFoto(List<Foto> foto) {
 		this.foto = foto;
 	}
+	public Departamento getDepartamento() {
+		return departamento;
+	}
+	public void setDepartamento(Departamento departamento) {
+		this.departamento = departamento;
+	}
+	
 	
 }
