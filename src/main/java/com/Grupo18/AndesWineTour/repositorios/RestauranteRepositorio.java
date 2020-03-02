@@ -13,5 +13,5 @@ import java.util.List;
 @Repository
 public interface RestauranteRepositorio extends JpaRepository<Restaurante, String> {
     @Query("select c from Restaurante c where c.nombre like %:nombre%")
-    public List<Hotel> buscarRestaurantePorNombre (@Param("nombre") String nombre);
+    public List<Restaurante> buscarRestaurantePorNombre (@Param("nombre") String nombre);
 }

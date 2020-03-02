@@ -11,5 +11,5 @@ import java.util.List;
 
 public interface RentarCarRepositorio extends JpaRepository<RentarCar, String> {
     @Query("select c from RentarCar c where c.nombre like %:nombre%")
-    public List<Hotel> buscarRentarCarPorNombre (@Param("nombre") String nombre);
+    public List<RentarCar> buscarRentarCarPorNombre (@Param("nombre") String nombre);
 }

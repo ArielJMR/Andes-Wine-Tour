@@ -11,5 +11,5 @@ import java.util.List;
 
 public interface PuntoTuristicoRepositorio extends JpaRepository<PuntoTuristico, String> {
     @Query("select c from PuntoTuristico c where c.nombre like %:nombre%")
-    public List<Hotel> buscarPuntoTuristicoPorNombre (@Param("nombre") String nombre);
+    public List<PuntoTuristico> buscarPuntoTuristicoPorNombre (@Param("nombre") String nombre);
 }
