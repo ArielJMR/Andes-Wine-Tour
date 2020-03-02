@@ -5,24 +5,33 @@ import com.Grupo18.AndesWineTour.error.ErrorServicio;
 import com.Grupo18.AndesWineTour.repositorios.DepartamentoRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
 public class DepartamentoServicio {
     @Autowired
     private DepartamentoRepositorio departamentoRepositorio;
-
-   public void guardarDepartamento (String nombre) throws ErrorServicio {
+    
+    @Transactional(readOnly = true)
+    public List<Departamento> ListarHoteles(){
+    	List<Departamento> hoteles = departamentoRepositorio.findAll();
+    	return hoteles;
+    }
+    
+    @Transactional
+    public void guardarDepartamento (String nombre) throws ErrorServicio {
     validar(nombre);
-
+    
     Departamento departamento = new Departamento();
     departamento.setNombre(nombre);
-
+    
     departamentoRepositorio.save(departamento);
-
+    
    }
-
+   @Transactional
    public void eliminarDepartamento (String id) throws ErrorServicio{
        if (id.isEmpty() || id== null){
            throw new ErrorServicio("no puede estar vacio el campo de id o ser nulo");
@@ -38,7 +47,7 @@ public class DepartamentoServicio {
            throw new ErrorServicio("no se encontro un departamento con ese id");
        }
    }
-
+   
    public void validar (String nombre) throws  ErrorServicio{
        if  (nombre.isEmpty() || nombre==null){
            throw new ErrorServicio("El nombre no puede estar vacio o ser nulo");
