@@ -17,7 +17,7 @@ public class FotoServicio {
 	private FotoRepositorio fotoRepositorio;
 	
 	@Transactional
-	public Foto guardar(MultipartFile archivo) {
+	public Foto guardar (MultipartFile archivo) throws ErrorServicio{
 		if(archivo!=null) {
 			try {
 				Foto foto = new Foto();

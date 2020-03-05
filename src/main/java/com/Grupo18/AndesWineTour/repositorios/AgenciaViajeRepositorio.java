@@ -11,6 +11,6 @@ import com.Grupo18.AndesWineTour.entidades.AgenciaViajes;
 @Repository
 public interface AgenciaViajeRepositorio extends JpaRepository<AgenciaViajes, String>{
 	
-@Query(value =" select c from AgenciaViajes c where c.nombre=%:nombre%")
+@Query(value =" select c from AgenciaViajes c where c.nombre like %:nombre%")
 	public List<AgenciaViajes> buscarAgenciaPorNombre(@Param("nombre") String nombre);
 }
