@@ -34,7 +34,7 @@ public class Usuario {
 	@NotEmpty @Email
 	private String email;
 	@NotEmpty
-	@Length(min=8)
+	@Length(min=5)
 	private String contraseña;
 	
 	@OneToOne

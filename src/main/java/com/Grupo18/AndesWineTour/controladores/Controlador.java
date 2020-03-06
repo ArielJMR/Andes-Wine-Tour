@@ -2,7 +2,11 @@ package com.Grupo18.AndesWineTour.controladores;
 
 import java.awt.*;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+import com.Grupo18.AndesWineTour.error.ErrorServicio;
+import com.Grupo18.AndesWineTour.servicios.UsuarioServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.Grupo18.AndesWineTour.entidades.Hotel;
 import com.Grupo18.AndesWineTour.servicios.HotelServicio;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 
@@ -20,6 +25,9 @@ public class Controlador {
 
 	@Autowired
 	private HotelServicio hotelServicio;
+
+	@Autowired
+	private UsuarioServicio usuarioServicio;
 
 	@GetMapping("/")
 	private String index() {
@@ -41,8 +49,20 @@ public class Controlador {
 	public String registro() {
 		return "registro";
 		}
-		//@PostMapping("/registrar")
-		//public String registrar(String nombre, String contraseña, String contraseña1)
+
+		@PostMapping("/registro")
+		public String registro(@RequestParam String nombre, @RequestParam String apellido, @RequestParam String username, @RequestParam String contraseña,@RequestParam String contraseña1, @RequestParam String email){
+		try {
+			usuarioServicio.registrar(nombre,apellido, username, contraseña, contraseña1, email);
+
+		}catch (ErrorServicio e){
+			Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE,null,e);
+			return "registro";
+		}
+
+
+			return "index";
+		}
 
 
 
@@ -51,9 +71,9 @@ public class Controlador {
 		return "busqueda";
 		}
 
-	@GetMapping("/hospedaje")
-	private String hospedaje() {
-		return "hospedaje";
+	@GetMapping("/hyatt")
+	private String hyatt() {
+		return "hyatt";
 		}
 
 		}

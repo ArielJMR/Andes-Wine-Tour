@@ -7,6 +7,6 @@ import org.springframework.data.repository.query.Param;
 
 public interface UsuarioRepositorio extends JpaRepository<Usuario,String> {
 
-    @Query("select c from Usuario c where c.email like %:user% or c.username like %:user%")
+    @Query("select c from Usuario c where c.email=:user or c.username=:user")
     public Usuario  buscarUsuarioPorMailOUsername (@Param("user") String user);
 }

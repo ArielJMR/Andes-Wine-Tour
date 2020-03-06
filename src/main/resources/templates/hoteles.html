@@ -10,18 +10,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <LINK REL=StyleSheet HREF="static/estilohoteles.css" TYPE="text/css" MEDIA=screen>
-    <link rel="stylesheet" href="static/style.css" TYPE="text/css" MEDIA=screen>
+    <link rel="stylesheet" href="estilohoteles.css" type="text/css" MEDIA="screen">
 
+    <link rel="stylesheet" href="style.css" TYPE="text/css" MEDIA="screen">
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+
+  
+    
 
     <title>ANDES WINE TOUR</title>
-    <link rel="icon" type="image/png" href="static/img/uva.png">
+    <link rel="icon" type="image/png" href="img/uva.png">
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"> <a href="/"> HOME</a>
+        <a class="navbar-brand" href="/">  HOME</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,44 +66,77 @@
                     <button type="button" class="btn btn-info">Buscar</button>
 
                     <div class=btn-group><a href="/registro"><button type="button"
-                                class="btn btn-outline-secondary">Registrate</button></div>
+                                class="btn btn-outline-secondary">Registrate</button></a></div>
         </a>
 
         <div class=btn-group><a href="/login"><button type="button"
-                    class="btn btn-outline-secondary">Ingresá</button></div></a>
+                                                      class="btn btn-outline-secondary">Ingresá</button></a></div>
 
         </form>
         </div>
     </nav>
 
-    <h1 class="titulo">HOTELES</h1>
+    <h1 class= "titulo">HOTELES</h1>
     <div class="card-deck">
-        <div class="card text-center">
-          <img src="static/img/hoteles/fotos cuadradas/hyat.jpg" class="card-img-top" alt="Hyatt">
+        <div class="card text-center" >
+          <img src="img/hoteles/fotos cuadradas/hyat.jpg" class="card-img-top" alt="Hyatt">
+          <div class ="estrellas">
+              <p class="puntuacion">
+                  <span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+              </p>
+          </div>
           <div class="card-body">
             <h5 class="card-title">Hyatt Plaza Hotel</h5>
             <h6 class="card-subtitle" ><b>Chile, 1124, 5500, Mendoza Capital, Argentina</b></h6>
             <p class="card-text">El Hotel Park Hyatt Mendoza de 5 estrellas es miembro del consorcio HYATT y está situado en pleno corazón de Mendoza, donde destaca por su fachada colonial española del siglo XIX y el diseño de sus instalaciones.</p>
-            <a href="#" class="btn btn-secondary">Conocé el hotel</a>
+            <a href="/hyatt" class="btn btn-secondary col-md-8">Conocé el hotel</a>
           </div>
 
         </div>
         <div class="card text-center">
-          <img src="static/img/hoteles/fotos cuadradas/intercontinental.jpg" class="card-img-top" alt="Intercontinental">
+          <img src="img/hoteles/fotos cuadradas/intercontinental.jpg" class="card-img-top" alt="Intercontinental">
+          <div class ="estrellas">
+            <p class="puntuacion">
+                <span>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+            </p>
+        </div>
           <div class="card-body">
             <h5 class="card-title">Intercontinental Mendoza</h5>
             <h6 class="card-subtitle"><b>Perez Cuesta Esquina Acceso Este, Mendoza Capital, Argentina</b></h6>
             <p class="card-text">Junto al centro comercial más grande de la ciudad se encuentra el InterContinental Mendoza, un hotel de 5 estrellas con una amplia variedad de equipamientos exclusivos.</p>
-            <a href="#" class="btn btn-secondary">Conocé el hotel</a>
+            <a href="#" class="btn btn-secondary col-md-8">Conocé el hotel</a>
           </div>
         </div>
         <div class="card text-center">
-          <img src="static/img/hoteles/fotos cuadradas/sheraton.jpg" class="card-img-top" alt="Sheraton Mendoza">
+          <img src="img/hoteles/fotos cuadradas/sheraton.jpg" class="card-img-top" alt="Sheraton Mendoza">
+           <div class ="estrellas">
+              <p class="puntuacion">
+                  <span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+              </p>
+          </div>
           <div class="card-body">
             <h5 class="card-title">Sheraton Mendoza</h5>
             <h6 class="card-subtitle"><b>Primitivo de la Reta 989, 5500, Mendoza Capital, Argentina</b></h6>
             <p class="card-text">El Sheraton Mendoza Hotel es un hotel de 5 estrellas situado en el centro turístico y cultural de Mendoza y que ofrece vistas a la cordillera de Los Andes, en Argentina.</p>
-            <a href="#" class="btn btn-secondary">Conocé el hotel</a>
+            <a href="#" class="btn btn-secondary col-md-8">Conocé el hotel</a>
           </div>
         </div>
       </div>
@@ -115,6 +154,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </body>
 
 </html>

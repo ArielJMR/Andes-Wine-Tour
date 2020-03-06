@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
 
   <!-- JQUERY -->
 <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,12 +16,12 @@
 <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+  <LINK REL="stylesheet" HREF="style.css" TYPE="text/css" MEDIA="screen">
 
 
 
     <title>ANDES WINE TOUR</title>
-  <link rel="icon" type="image/png" href="static/img/uva.png">
+  <link rel="icon" type="image/png" href="img/uva.png">
   </head>
   <body>
 
@@ -29,7 +29,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-  <a class="navbar-brand" href="#"><a href="/index"> HOME </a>
+  <a class="navbar-brand" href="/"> HOME </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -82,22 +82,29 @@
         <div class="col-sm-8 main-section">
              <div class="modal-content">
               <div class="col-12 user-img">
-                  <img src="sattic/img/perfil-02.png">
+                  <img src="img/perfil-02.png">
               </div>
 
-              <form class="col-12" action= "registrar" method="POST">
-
+              <form class="col-12" action= "registro" method="POST" enctype="multipart/form-data">
+                <p th:if = "${error != null}"
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Nombre de usuario" name="nombre"/>
                 </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="apellido" name="apellido"/>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Username" name="username"/>
+                  </div>
 
                 <div class="form-group"  id="contraseña-group">
                   <input type="password" class="form-control" placeholder="Contraseña" name="contraseña"/>
-                </div>
-                 <div class="form-group"  id="contraseña-group">
+
                   <input type="password" class="form-control" placeholder="Repetir contraseña" name="contraseña1"/>
                 </div>
-
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="E-mail" name="email"/>
+                  </div>
 
               <div class="dropdown">
 

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<LINK REL="stylesheet" HREF="style.css" TYPE="text/css" MEDIA="screen">
+
+
+    <title>ANDES WINE TOUR</title>
+	<link rel="icon" type="image/png" href="img/uva.png">
+  </head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">  HOME</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/hoteles">HOTELES</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">RESTAURANTES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">RENT A CAR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PUNTOS DE INTERÉS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CASA DE CAMBIO</a>
+      </li>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+  
+    <input class="form-control mr-sm-2" type="search" placeholder="¿Buscás algo?" aria-label="Search">
+
+    <button type="button" class="btn btn-info">Buscar</button>  
+
+    <div class=btn-group><a href ="registro.html"><button type="button" class="btn btn-outline-secondary">Registrate</button></div></a>
+
+    <div class=btn-group><a href="login.html"><button type="button" class="btn btn-outline-secondary">Ingresá</button></div></a>
+
+  </form>
+  </div>
+</nav>
+
+
+<h1 class= "titulo">HYATT</h1>
+
+<div class="card-deck">
+    <div class="card">
+      <img src="img/hyatt/frente.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><b>Clásico mendocino</b></h5>
+        <p class="card-text">Park Hyatt Mendoza, con su magnífica fachada Neoclásica de la academia francesa del siglo XX, es un prestigioso y emblemático hotel cinco estrellas. El hotel se encuentra en el centro de la ciudad, frente a la histórica Plaza Independencia.</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/hyatt/piscina.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><b>Piscina</b></h5>
+        <p class="card-text">Kaua Club & Spa cuenta con una piscina externa (17 metros de largo /10 metros de ancho),  temperada durante la temporada invernal, lo cual permite disfrutarla todo el año.</p>
+        
+      </div>
+    </div>
+    
+    <div class="card">
+        <img src="img/hyatt/perro.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Mascotas</b></h5>
+          <p class="card-text">Es difícil dejar a tu mejor amigo en casa cuando viajas por largos períodos. En Park Hyatt Mendoza, puede disfrutar de una experiencia de estadía prolongada que admite mascotas.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/hyatt/habitacion.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Habitación + Suites</b></h5>
+          <p class="card-text">El hotel cuenta con 186 habitaciones y suites decoradas con estilo contemporáneo</p>
+          
+        </div>
+      </div>
+  </div>
+
+  <br>  <br>
+
+
+  <div class="container">
+      <div class="row">
+          <div class="col">
+            <form>
+                <div class="form-group">
+                  <p th:if="${usuariosession.username!=null}" th:text="${usuariosession.username}"> </p>
+              
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2">Puntuación</label>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Comentarios</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+      </div>
+  </div>
+ 
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
