@@ -23,18 +23,18 @@ public class Usuario {
 	@GenericGenerator(name = "uuid" , strategy = "uuid2")	
 	private String id;
 	@NotEmpty
-	@Length(min=5, max=24)
+	@Length(min=1, max=24)
 	private String username;
 	@NotEmpty
-	@Length(min=5, max=24)
+	@Length(min=1, max=24)
 	private String nombre;
 	@NotEmpty
-	@Length(min=5, max=24)
+	@Length(min=1, max=24)
 	private String apellido;
 	@NotEmpty @Email
 	private String email;
 	@NotEmpty
-	@Length(min=5)
+	@Length(min=1)
 	private String contraseña;
 	
 	@OneToOne

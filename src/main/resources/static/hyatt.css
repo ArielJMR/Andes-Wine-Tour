@@ -1,0 +1,141 @@
+.btn-info{
+    margin-right: 10px;
+  }
+  
+  .btn-outline-secondary{
+    margin-right: 10px;
+  }
+  
+  
+    /*INGRESO*/
+  
+  .modal-content{
+    border-color: #F8F9FA;
+    background-color:#F8F9FA;
+    opacity: .95;
+    padding: 0 40px;
+  }
+  
+  .user-img{
+    margin-top: -90px;
+    margin-bottom: 20px
+  }
+  
+  .user-img img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+    display: block; margin-left: auto; margin-right: auto;
+  }
+  
+  button{
+    width: 100px;
+  }
+  
+  .forgot{
+    padding: 5px 0;
+  
+  }
+  
+  .btn-secondary{
+  
+      margin-right: 0;
+      margin-right: 0px;
+      margin-top: 0px;
+      margin-left: 57px;
+  
+  }
+  
+  .remember{
+      display: block; margin-left: auto; margin-right: auto;
+  }
+  
+
+
+/*CABECERA*/
+.cabecera{
+    background: url(img/hyatt/frente.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 550px;
+  
+  }
+  
+  .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Futurist Fixed-width;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 65px;
+    color: white;
+    position: center;
+    padding-top: 280px;
+  
+  }
+  .card-deck {
+      padding-top: 30px;
+  }
+  .card{
+    background-color: aliceblue;
+  }
+  
+  .wifi{
+    padding-top: 50px;
+    padding-right: 70px;
+  }
+  .comida{
+    padding-top: 50px;
+    padding-right: 70px;
+  }
+  .cafe{
+    padding-top: 50px;
+    padding-right: 70px;
+  }
+  .gimnasio{
+    padding-top: 50px;
+    padding-right: 70px;
+  }
+  
+  .netflix{
+    padding-top: 50px;
+    padding-right: 70px;
+  }
+  .servicio{
+    padding-top: 50px;
+    padding-right: 70px;
+  }
+  .puerta{
+    padding-top: 50px;
+    padding-right: 70px;
+  }
+  .pileta{
+    padding-top: 50px;
+    padding-right: 70px;
+  }
+  .container-mapa{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+  .ubicacion{
+    text-align: center;
+    font-family: Futurist Fixed-width ;
+    font-size: 30px;
+    color: midnightblue;
+  }
+  @media screen and (max-width: 535px) {
+    .titulo {
+    font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 395px) {
+    .titulo {
+    font-size: 30px;
+    }
+  }

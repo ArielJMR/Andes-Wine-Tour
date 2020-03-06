@@ -1,0 +1,104 @@
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    font-family: Futurist Fixed-width;
+    text-align: center;
+    font-size: 35px;
+    color:#707070;
+    position: center;
+    margin-top: 100px;
+  }
+  h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Futurist Fixed-width;
+    text-align: center;
+    font-size: 35px;
+    color:#707070;
+    position: center;
+  }
+  
+  body {
+    margin: 0; 
+    background-image: url("img/background.jpg");
+    background-size: cover;	
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+  
+    .main-section{
+    margin: 0 auto;
+    margin-top: 40%;
+    padding: 0;
+  }
+  
+  
+  .btn-info{
+    margin-right: 10px;
+  }
+  
+  .btn-outline-secondary{
+    margin-right: 10px;
+  }
+  
+  
+    /*INGRESO*/
+  
+  .modal-content{
+    border-color: #F8F9FA;
+    background-color:#F8F9FA;
+    opacity: .95;
+    padding: 0 40px;
+  }
+  
+  .user-img{
+    margin-top: -90px;
+    margin-bottom: 20px
+  }
+  
+  .user-img img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+    display: block; margin-left: auto; margin-right: auto;
+  }
+  
+  button{
+    width: 100px;
+  }
+  
+  .forgot{
+    padding: 5px 0;
+  
+  }
+  
+  .btn-secondary{
+  
+      margin-right: 0;
+      margin-right: 0px;
+      margin-top: 0px;
+      margin-left: 57px;
+  
+  }
+  
+  .remember{
+      display: block; margin-left: auto; margin-right: auto;
+  }
+  @media screen and (max-width: 535px) {
+    .titulo {
+    font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 395px) {
+    .titulo {
+    font-size: 30px;
+    }
+  }
+  
+  
+   

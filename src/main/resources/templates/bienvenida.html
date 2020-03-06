@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,33 +7,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
-    <!-- Los iconos tipo Solid de Fontawesome-->
-  <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-  <script src = "https://use.fontawesome.com/releases/v5.0.7/js/all.js"/></head>
 
-  <!-- JQUERY -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-<link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-
+	<LINK REL=StyleSheet HREF="estilobienvenida.css" TYPE="text/css" MEDIA=screen>
 
 
     <title>ANDES WINE TOUR</title>
-  <link rel="icon" type="image/png" href="img/uva.png">
+	<link rel="icon" type="image/png" href="img/uva.png">
   </head>
   <body>
 
-    <!-- nav bar -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-  <a class="navbar-brand" href="/">HOME </a>
-
+  <a class="navbar-brand" href="/">  HOME</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -65,66 +50,22 @@
 
     </ul>
     <form class="form-inline my-2 my-lg-0">
-
+  
     <input class="form-control mr-sm-2" type="search" placeholder="¿Buscás algo?" aria-label="Search">
 
-    <button type="button" class="btn btn-info">Buscar</button>
+    <button type="button" class="btn btn-info">Buscar</button>  
 
+    <div class=btn-group><a href ="/registro"><button type="button" class="btn btn-outline-secondary">Registrate</button></a></div>
 
+    <div class=btn-group><a href="/login"><button type="button" class="btn btn-outline-secondary">Ingresá</button></a></div>
 
   </form>
   </div>
 </nav>
 
 
-
-      <!-- LOGIN -->
-
-      <div class="modal-dialog text center"> 
-
-        <div class="col-sm-8 main-section">
-             <div class="modal-content">
-              <div class="col-12 user-img">
-                  <img src="img/perfil-01.png"/>
-              </div>
-
-              <form class="col-12" action= "/logincheck" method="POST" >
-                <p th:if="${error != null}" th:text="${error}" style="color:red"></p>
-                <p th:if="${logout != null}" th:text="${logout}" style="color:green"></p>
-
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Nombre de usuario" name="username"/>
-                </div>
-
-                <div class="form-group"  id="contraseña-group">
-                  <input type="password" class="form-control" placeholder="Contraseña" name="password"/>
-                </div>
-
-                <button type="submit" class="btn btn-secondary"> Ingresar </button>
-
-              </form>
-
-              <div class ="col-12 forgot" >
-                <br>
-                <a href="#" style="margin-left: 41px;">¿Recordar contraseña?</a>
-                <br>
-                <a href="#" style="margin-left: 57px;"> <strong>Creá una cuenta</strong>  </a>
-                </div>
-                <br>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
+    <h1>¡BIENVENIDOS A ANDES WINE TOUR!</h1>
+    <h2>Se ha registrado con éxito</h2>
 
 
     <!-- Optional JavaScript -->

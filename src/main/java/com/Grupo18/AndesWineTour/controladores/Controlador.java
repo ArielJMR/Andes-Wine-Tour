@@ -10,6 +10,7 @@ import com.Grupo18.AndesWineTour.servicios.UsuarioServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.Grupo18.AndesWineTour.entidades.Hotel;
 import com.Grupo18.AndesWineTour.servicios.HotelServicio;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 @Controller
 
@@ -33,6 +35,12 @@ public class Controlador {
 	private String index() {
 		return "index";
 	}
+
+	@GetMapping("/logincheck")
+	private String logincheck() {
+		return "logincheck";
+	}
+
 	@GetMapping("/hoteles")
 	private String hoteles(Model model) {
 		List<Hotel> hoteles = hotelServicio.listarHoteles();
@@ -41,7 +49,13 @@ public class Controlador {
 	}
 
 	@GetMapping("/login")
-	public String login() {
+	public String login(@RequestParam(required = false) String error, @RequestParam (required = false)String logout, ModelMap model) {
+		if (error!=null){
+			model.put("error","Usuario o clave incorrectos.");
+		}
+if (logout != null){
+	model.put("logout", "Ha salido correctamente");
+}
 		return "login";
 		}
 
@@ -51,25 +65,39 @@ public class Controlador {
 		}
 
 		@PostMapping("/registro")
-		public String registro(@RequestParam String nombre, @RequestParam String apellido, @RequestParam String username, @RequestParam String contraseña,@RequestParam String contraseña1, @RequestParam String email){
+		public String registro(ModelMap modelo, MultipartFile foto, @RequestParam String nombre, @RequestParam String apellido, @RequestParam String username, @RequestParam String contraseña, @RequestParam String contraseña1, @RequestParam String email){
 		try {
-			usuarioServicio.registrar(nombre,apellido, username, contraseña, contraseña1, email);
-
+			usuarioServicio.registrar(nombre,apellido, username, contraseña, contraseña1, email, foto);
 		}catch (ErrorServicio e){
-			Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE,null,e);
+				modelo.put("error", e.getMessage());
+				modelo.put("nombre", nombre);
+				modelo.put("apellido",apellido);
+				modelo.put("username",username);
+				modelo.put("contraseña", contraseña);
+				modelo.put("contraseña1", contraseña1);
+				modelo.put("email",email);
 			return "registro";
 		}
 
 
-			return "index";
+			return "bienvenida";
 		}
 
 
 
-	@GetMapping("/barra de busqueda")
-	public String busqueda() {
-		return "busqueda";
+	@GetMapping("/sheraton")
+	public String sheraton() {
+		return "sheraton";
 		}
+
+	@GetMapping("/inter")
+	public String inter() {
+		return "inter";
+	}
+	@GetMapping("/bienvenida")
+	public String bienvenida() {
+		return "bienvenida";
+	}
 
 	@GetMapping("/hyatt")
 	private String hyatt() {

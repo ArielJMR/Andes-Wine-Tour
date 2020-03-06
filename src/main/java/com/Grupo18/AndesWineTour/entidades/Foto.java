@@ -10,6 +10,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 @Table(name="foto")
@@ -42,9 +43,11 @@ public class Foto {
 	public byte[] getContenido() {
 		return contenido;
 	}
-	public void setContenido(byte[] bs) {
-		this.contenido = bs;
+
+	public void setContenido(byte[] contenido) {
+		this.contenido = contenido;
 	}
+
 	public String getId() {
 		return id;
 	}

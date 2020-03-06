@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang = "es">
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
   <head>
     <!-- Required meta tags -->
     <meta charset = "utf-8">
@@ -86,37 +86,61 @@
               </div>
 
               <form class="col-12" action= "registro" method="POST" enctype="multipart/form-data">
-                <p th:if = "${error != null}"
+                <p th:if = "${error != null}" th:text="${error}" style = "color:red;"></p>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Nombre de usuario" name="nombre"/>
+                  <input type="text" class="form-control" placeholder="Nombre de usuario" name="nombre" th:value="${nombre}"/>
                 </div>
                   <div class="form-group">
-                      <input type="text" class="form-control" placeholder="apellido" name="apellido"/>
+                      <input type="text" class="form-control" placeholder="apellido" name="apellido" th:value="${apellido}" />
                   </div>
                   <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Username" name="username"/>
+                      <input type="text" class="form-control" placeholder="Username" name="username" th:value="${username}"/>
+                  </div>
+                  <div class="form-group">
+                      <input type="file" class="form-control" placeholder="Foto" name="foto"/>
                   </div>
 
                 <div class="form-group"  id="contraseña-group">
-                  <input type="password" class="form-control" placeholder="Contraseña" name="contraseña"/>
+                  <input type="password" class="form-control" placeholder="Contraseña" name="contraseña" />
 
-                  <input type="password" class="form-control" placeholder="Repetir contraseña" name="contraseña1"/>
+                  <input type="password" class="form-control" placeholder="Repetir contraseña" name="contraseña1" />
                 </div>
                   <div class="form-group">
-                      <input type="text" class="form-control" placeholder="E-mail" name="email"/>
+                      <input type="text" class="form-control" placeholder="E-mail" name="email" th:value="${email}"/>
                   </div>
 
-              <div class="dropdown">
+                  <div class="dropdown">
 
-              <a class="btn btn-light dropdown-toggle" href="#" data-toggle="dropdown">
-              Sexo
-              </a>
-              <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Mujer</a>
-              <a href="#" class="dropdown-item">Hombre</a>
-              <a href="#" class="dropdown-item">Otre</a>
-              </div>
-            </div>
+                      <p>
+                          <label for="sexo">Sexo</label>
+                          <select name="sexo" id="sexo">
+                              <option value="Mujer">Mujer</option>
+                              <option value="Hombre">Hombre</option>
+                          </select>
+                      </p>
+
+
+
+
+                      <p>
+                          <label for="sexo">Sexo</label>
+                          <select name="sexo" id="">
+                              <option value="Paises">Argentina</option>
+                              <option value="Paises">Chile</option>
+                              <option value="Paises">Brasil</option>
+                              <option value="Paises">Colombia</option>
+                              <option value="Paises">Costa Rica</option>
+                              <option value="Paises">Cuba</option>
+                              <option value="Paises">Ecuador</option>
+                              <option value="Paises">Guatemala</option>
+                              <option value="Paises">México</option>
+                              <option value="Paises">Paraguay</option>
+                              <option value="Paises">Perú</option>
+                              <option value="Paises">Uruguay</option>
+                              <option value="Paises">Venezuela</option>
+                          </select>
+                      </p>
+                  </div>
 
 
                           <div class="dropdown">

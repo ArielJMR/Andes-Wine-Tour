@@ -13,10 +13,12 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpSession;
 import javax.transaction.Transactional;
@@ -31,6 +33,9 @@ public class UsuarioServicio implements UserDetailsService {
 
     @Autowired
     UsuarioRepositorio usuarioRepositorio;
+
+    @Autowired
+    FotoServicio fotoServicio;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -53,17 +58,21 @@ public class UsuarioServicio implements UserDetailsService {
         }
     }
     @Transactional
-    public void registrar (String nombre, String apellido, String username, String contraseña,String contraseña1, String email) throws ErrorServicio{
+    public void registrar (String nombre, String apellido, String username, String contraseña,String contraseña1, String email, MultipartFile foto) throws ErrorServicio{
     validar(nombre, apellido, username, contraseña, contraseña1, email);
 
             Usuario usuario= new Usuario();
         Date date = new Date();
             usuario.setUsername(username);
-            usuario.setContraseña(contraseña);
+            String encriptada = new BCryptPasswordEncoder().encode(contraseña);
+            usuario.setContraseña(encriptada);
             usuario.setApellido(apellido);
             usuario.setNombre(nombre);
             usuario.setEmail(email);
             usuario.setFecha_alta(date);
+
+            Foto foto1 =fotoServicio.guardar(foto);
+            usuario.setFoto(foto1);
 
 
             usuarioRepositorio.save(usuario);
@@ -100,10 +109,8 @@ public class UsuarioServicio implements UserDetailsService {
                         throw new ErrorServicio("La contraseña no puede estar vacia o ser nula");
                     }
 
-                    if (contraseña1 == null || contraseña1.isEmpty()) {
-                        throw new ErrorServicio("Este campo no puede ser nulo o vacio");
-                    } else if (contraseña != contraseña1) {
-                        throw new ErrorServicio("Las contraseñas tienen que conicidir, por favor vuelve a ingresar la contraseña");
+                    if (!contraseña.equals(contraseña1)) {
+                        throw new ErrorServicio("Las contraseñas tienen que coicidir, por favor vuelve a ingresar la contraseña");
                     }
 
                 }
